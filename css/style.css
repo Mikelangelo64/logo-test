@@ -37,6 +37,7 @@ body {
 .preloader._preloader-active .line-31, .preloader._preloader-active .line-22, .preloader._preloader-active .line-23, .preloader._preloader-active .line-24, .preloader._preloader-active .line-25, .preloader._preloader-active .line-26, .preloader._preloader-active .line-27, .preloader._preloader-active .line-28, .preloader._preloader-active .line-29, .preloader._preloader-active .line-30,
 .preloader._preloader-active .line-31, .preloader._preloader-active .line-32, .preloader._preloader-active .line-33, .preloader._preloader-active .line-34 {
   opacity: 1;
+  stroke-width: 3;
 }
 .preloader__wrapper {
   position: absolute;
