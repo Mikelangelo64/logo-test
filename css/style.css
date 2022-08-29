@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  height: unset !important;
+}
+
+.preloader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.preloader._close-preloader {
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.preloader._preloader-active .square, .preloader._preloader-active .word-1, .preloader._preloader-active .word-2, .preloader._preloader-active .word-3, .preloader._preloader-active .word-4, .preloader._preloader-active .word-5 {
+  opacity: 1;
+}
+.preloader._preloader-active .line-1, .preloader._preloader-active .line-2, .preloader._preloader-active .line-3, .preloader._preloader-active .line-4, .preloader._preloader-active .line-5, .preloader._preloader-active .line-6, .preloader._preloader-active .line-7, .preloader._preloader-active .line-8, .preloader._preloader-active .line-9, .preloader._preloader-active .line-10,
+.preloader._preloader-active .line-11, .preloader._preloader-active .line-12, .preloader._preloader-active .line-13, .preloader._preloader-active .line-14, .preloader._preloader-active .line-15, .preloader._preloader-active .line-16, .preloader._preloader-active .line-17, .preloader._preloader-active .line-18, .preloader._preloader-active .line-19, .preloader._preloader-active .line-20,
+.preloader._preloader-active .line-31, .preloader._preloader-active .line-22, .preloader._preloader-active .line-23, .preloader._preloader-active .line-24, .preloader._preloader-active .line-25, .preloader._preloader-active .line-26, .preloader._preloader-active .line-27, .preloader._preloader-active .line-28, .preloader._preloader-active .line-29, .preloader._preloader-active .line-30,
+.preloader._preloader-active .line-31, .preloader._preloader-active .line-32, .preloader._preloader-active .line-33, .preloader._preloader-active .line-34 {
+  opacity: 1;
+}
+.preloader__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.preloader__logo {
+  max-width: 50%;
+  width: 100%;
+}
+.preloader__logo svg {
+  width: 100%;
+  height: auto;
+}
+.preloader__logo svg .square {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.8s;
+  transition: all 0.3s ease 1.8s;
+}
+.preloader__logo svg .word-1, .preloader__logo svg .word-2, .preloader__logo svg .word-3, .preloader__logo svg .word-4, .preloader__logo svg .word-5 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 2s;
+  transition: all 0.3s ease 2s;
+}
+.preloader__logo svg .line-1 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+.preloader__logo svg .line-2 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.35s;
+  transition: all 0.3s ease 0.35s;
+}
+.preloader__logo svg .line-3 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.4s;
+  transition: all 0.3s ease 0.4s;
+}
+.preloader__logo svg .line-4 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.45s;
+  transition: all 0.3s ease 0.45s;
+}
+.preloader__logo svg .line-5 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.5s;
+  transition: all 0.3s ease 0.5s;
+}
+.preloader__logo svg .line-6 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.55s;
+  transition: all 0.3s ease 0.55s;
+}
+.preloader__logo svg .line-7 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.6s;
+  transition: all 0.3s ease 0.6s;
+}
+.preloader__logo svg .line-8 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.65s;
+  transition: all 0.3s ease 0.65s;
+}
+.preloader__logo svg .line-9 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.7s;
+  transition: all 0.3s ease 0.7s;
+}
+.preloader__logo svg .line-10 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.75s;
+  transition: all 0.3s ease 0.75s;
+}
+.preloader__logo svg .line-11 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.8s;
+  transition: all 0.3s ease 0.8s;
+}
+.preloader__logo svg .line-12 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.85s;
+  transition: all 0.3s ease 0.85s;
+}
+.preloader__logo svg .line-13 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.9s;
+  transition: all 0.3s ease 0.9s;
+}
+.preloader__logo svg .line-14 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0.95s;
+  transition: all 0.3s ease 0.95s;
+}
+.preloader__logo svg .line-15 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1s;
+  transition: all 0.3s ease 1s;
+}
+.preloader__logo svg .line-16 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.05s;
+  transition: all 0.3s ease 1.05s;
+}
+.preloader__logo svg .line-17 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.1s;
+  transition: all 0.3s ease 1.1s;
+}
+.preloader__logo svg .line-18 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.15s;
+  transition: all 0.3s ease 1.15s;
+}
+.preloader__logo svg .line-19 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.2s;
+  transition: all 0.3s ease 1.2s;
+}
+.preloader__logo svg .line-20 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.25s;
+  transition: all 0.3s ease 1.25s;
+}
+.preloader__logo svg .line-21 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.3s;
+  transition: all 0.3s ease 1.3s;
+}
+.preloader__logo svg .line-22 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.35s;
+  transition: all 0.3s ease 1.35s;
+}
+.preloader__logo svg .line-23 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.4s;
+  transition: all 0.3s ease 1.4s;
+}
+.preloader__logo svg .line-24 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.45s;
+  transition: all 0.3s ease 1.45s;
+}
+.preloader__logo svg .line-25 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.5s;
+  transition: all 0.3s ease 1.5s;
+}
+.preloader__logo svg .line-26 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.55s;
+  transition: all 0.3s ease 1.55s;
+}
+.preloader__logo svg .line-27 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.6s;
+  transition: all 0.3s ease 1.6s;
+}
+.preloader__logo svg .line-28 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.65s;
+  transition: all 0.3s ease 1.65s;
+}
+.preloader__logo svg .line-29 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.7s;
+  transition: all 0.3s ease 1.7s;
+}
+.preloader__logo svg .line-30 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.75s;
+  transition: all 0.3s ease 1.75s;
+}
+.preloader__logo svg .line-31 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.8s;
+  transition: all 0.3s ease 1.8s;
+}
+.preloader__logo svg .line-32 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.85s;
+  transition: all 0.3s ease 1.85s;
+}
+.preloader__logo svg .line-33 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.9s;
+  transition: all 0.3s ease 1.9s;
+}
+.preloader__logo svg .line-34 {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 1.95s;
+  transition: all 0.3s ease 1.95s;
+}
